@@ -8,11 +8,23 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-
+import {api1} from '@/request/api'
 export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  created() {
+    this.getInfo(123)
+  },
+  mounted() {
+    api1({name:'111'})
+
+  },
+  methods:{
+    getInfo(arr) {
+      console.log(arr)
+    }
   }
 }
 </script>
