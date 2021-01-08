@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="bottom-bar-view ">
+    12313
   </div>
 </template>
 
@@ -23,3 +24,11 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+.bottom-bar-view {
+  position: absolute;
+  bottom: 0;
+  height: 44px;
+}
+
+</style>
